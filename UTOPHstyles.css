@@ -11,14 +11,16 @@
     padding: 0;
     font-family: 'PT Serif', 'Helvetica', 'Arial';
   }
+
   #top-bar {
     width: 100%;
     background: #F1F1F1; /* light gray */
     border-bottom: 1px solid #00108C; /* dark gray "underline" */
     height: 25px;
   }
+
   .normal-wrapper {
-    width: 900px;
+    width: 70%;
     margin: 0 auto;
     padding: 15px 40px;
     overflow: auto;
@@ -35,10 +37,12 @@
     font-size: 60pt;
     float: left;
   }
+
   h1 {
     float: left;
     margin: 21px 0 0 25px;
   }
+
   #navbar {
       list-style-type: none; /* remove bullet points */
       margin: 3px 0 0 0;
@@ -87,6 +91,7 @@
     box-sizing: border-box; /* ensure padding and borders do not increase the size */
     margin-top: 20px;
   }
+
   .two-third {
     /* width: 60%; */
     float: left;
@@ -95,6 +100,7 @@
     text-align: right;
     margin-top: 20px;
   }
+
   .featured-image {
     max-width: 500px; /* reduce image size while maintaining aspect ratio */
   }
@@ -102,12 +108,15 @@
   .logo-image {
     max-width: 100%; /* reduce image size while maintaining aspect ratio */
   }
+
   .face-image {
     max-width: 95px; /* reduce image size while maintaining aspect ratio */
   }
+
   .no-margin-top {
     margin-top: 0; /* remove margin on things like headers */
   }
+
   #quote-area {
     background: #363636;
     color: #FFFFFF;
@@ -120,11 +129,13 @@
     font-size: 20pt;
     margin-top: 0px;
   }
+
   h4 {
     font-weight: normal;
     font-size: 16pt;
     margin-bottom: 0;
   }
+
   .icon-outer {
     box-sizing: border-box; /* ensure padding and borders do not increase the size */
     float: none;
@@ -133,6 +144,7 @@
     margin: auto;
     text-align: center;
   }
+
   .icon-circle {
     background: #EEEEEE;
     color: #B4B4B4;
@@ -146,6 +158,7 @@
     padding: 50px 0 0 0;
     cursor: pointer;
   }
+
   .icon-circle:hover {
     /* change color on hover (mouseover) */
     color: #FFFFFF;
@@ -154,6 +167,8 @@
 
   div.polaroidface {
     width: 16%;
+    min-width: 25px;
+    max-width: 16%;
     display: inline-block;
     background-color: white;
     margin-left: auto;
@@ -164,11 +179,16 @@
   img {width: 100%}
 
   div.container {
+    justify-content: center;
     text-align: center;
+    min-width: 25px;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
-    padding: 10px 20px;
+    padding: 10px 10px;
+    overflow auto;
   }
+
   #thumbs {
       width: 50%;
       margin-top:20px;
@@ -179,30 +199,77 @@
       -ms-text-justify: distribute-all-lines;
       text-justify: distribute-all-lines;
   }
+
   #thumbs a {
       vertical-align: top;
       display: inline-block;
       *display: inline;
       zoom: 1;
   }
+
   .stretch {
       width: 100%;
       display: inline-block;
       font-size: 0;
       line-height: 0
   }
+
   h5 {
     margin: 15px 0 10px 0;
     font-size: 20pt;
   }
+
   #footer {
     width: 100%;
     background: #F1F1F1; /* light gray */
     border-top: 1px solid #D4D4D4; /* dark gray "topline" */
     height: 150px;
   }
+
   .hidden {
     display: none;
   }
+
   a { color: #B4B4B4; } /* CSS link color */
+
+
+
+
+  /* Tabs for projects page */
+
+
+  /* Style the tab */
+.tab {
+ overflow: hidden;
+ background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+ background-color: inherit;
+ border: none;
+ outline: none;
+ cursor: pointer;
+ padding: 14px 16px;
+ transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+ background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+ color: #FFFFFF;
+ background-color: #00108C;
+}
+
+/* Style the tab content */
+.tabcontent {
+ display: none;
+ padding: 6px 12px;
+ border: 1px solid #ccc;
+ border-top: none;
+}
 </style>
