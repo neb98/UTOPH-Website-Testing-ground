@@ -32,7 +32,7 @@
         <li><a href="Team.html">Team</a></li>
         <li><a href="Projects.html">Projects</a></li>
         <!--<li><a href="https://www.leapmotion.com/">Sponsor</a></li>-->
-        <li><a href="Contact.html" class="last-link">Contact</a></li>
+        <li><a href="Contact.html" class="last-link">Contact & Signup</a></li>
       </ul>
     </div>
   </div>
@@ -46,24 +46,39 @@
   <!-- Tab links -->
  <div class="tab">
    <button class="tablinks" onclick="openProject(event, 'Treadmill')">Treadmill</button>
+   <button class="tablinks" onclick="openProject(event, 'Shoes')">Omni-Directional Shoes</button>
    <button class="tablinks" onclick="openProject(event, 'Room Scanner')">Room Scanner</button>
    <button class="tablinks" onclick="openProject(event, 'Leap Motion')">Leap Motion</button>
+
  </div>
 
  <!-- Tab content -->
  <div id="Treadmill" class="tabcontent">
    <h3><br>Omnidirectional VR Treadmill</h3>
    <p>Inspired by the Holodeck on Star Trek, and thinking we could build seomthing ourselves, <br>we went through with this project as one of our first.</p>
+   <img class = "projectPhoto", src="Project_Photos/Treadmill/BenInTreadmill2.jpg">
  </div>
+
+
+ <div id="Shoes" class="tabcontent">
+   <h3><br>Omni-Directional Shoes</h3>
+   <p>Inspired by the Holodeck on Star Trek, and thinking we could build seomthing ourselves, <br>we went through with this project as one of our first.</p>
+   <img class = "projectPhoto", src="Project_Photos/Shoes/Sideways.jpg">
+ </div>
+
 
  <div id="Room Scanner" class="tabcontent">
    <h3><br>3D Room Scanner</h3>
+
    <p>Using Lidar, a 360 degree camera and the HTC Vive controller, we are mapping the room to a 3D set of points,
      <br>and soon will be mapping textures from the camera to those points.
 
      <br><br> This model is created by waving the combined device throughout the room as though painting it, while keeping
      <br> track of the device's position using the Vive controller.</p>
+     <img class = "projectPhoto", src="Project_Photos/RoomScanner/HeldUp.jpg">
+
  </div>
+
 
  <div id="Leap Motion" class="tabcontent">
    <h3><br>Leap Motion VR Interaction</h3>
@@ -71,6 +86,7 @@
    <br> Our current goal is to integrate the output of two of these sensors to gain an
    <br> even more accurate view of where your hands are, to improve accuracy even further
    <br> and allow for even more complex hand gestures.</p>
+   <img class = "projectPhoto", src="Project_Photos/LeapMotion/handsNleap.jpeg">
  </div>
 </div>
 
@@ -119,7 +135,3 @@
     evt.currentTarget.className += " active";
   }
   </script>
-
-
-</body>
-</html>

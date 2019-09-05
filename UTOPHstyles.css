@@ -55,6 +55,7 @@
   .table {
     display: table;   /* Allow the centering to work */
     margin: 0 auto;
+    margin-bottom: 10px
   }
 /* Make the list items horizonatal*/
   #navbar li {
@@ -242,6 +243,7 @@
 .tab {
  overflow: hidden;
  background-color: #f1f1f1;
+ font-size: 20pt;
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -251,6 +253,7 @@
  outline: none;
  cursor: pointer;
  padding: 14px 16px;
+ font-size: 12pt;
  transition: 0.3s;
 }
 
@@ -271,5 +274,12 @@
  padding: 6px 12px;
  border: 1px solid #ccc;
  border-top: none;
+}
+
+.projectPhoto {
+  width: 70%;
+  border: 5px solid;
+  border-color: #00108C;
+
 }
 </style>
